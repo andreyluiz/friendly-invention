@@ -1,0 +1,29 @@
+{
+  "name": "friendly-invention",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyluiz/friendly-invention.git"
+  },
+  "author": "Andrey Luiz <andreyluiz.developer@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreyluiz/friendly-invention/issues"
+  },
+  "homepage": "https://github.com/andreyluiz/friendly-invention#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "riot": "^2.5.0",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
