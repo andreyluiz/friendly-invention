@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './app/index',
+  entry: ['./app/index', './node_modules/materialize-css/dist/js/materialize.js'],
   output: {
     path: path.join(__dirname, '/public/js'),
     filename: 'bundle.js',
@@ -32,6 +32,11 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
+      },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "resolve-url", "sass?sourceMap"]
       }
     ]
   },
